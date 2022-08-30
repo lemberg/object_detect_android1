@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RadioGroup
+		android:id="@+id/radio_group_impl_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		android:background="#70808000">
+		<RadioButton
+			android:id="@+id/radio_ml"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/ml_binding"
+			android:checked="true"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_obj_detect"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/obj_detection"
+			style="@style/RadioBtn" />
+	</RadioGroup>
+
+	<RadioGroup
+		android:id="@+id/radio_group_hw_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintLeft_toRightOf="@id/radio_group_impl_type"
+		app:layout_constraintTop_toTopOf="parent"
+		android:background="#70800080">
+		<RadioButton
+			android:id="@+id/radio_cpu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/cpu"
+			android:checked="true"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_gpu"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/gpu"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_nnapi"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/nnapi"
+			style="@style/RadioBtn" />
+	</RadioGroup>
+
+	<RadioGroup
+		android:id="@+id/radio_group_model_type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintLeft_toRightOf="@id/radio_group_hw_type"
+		app:layout_constraintTop_toTopOf="parent"
+		android:background="#70008080">
+		<RadioButton
+			android:id="@+id/radio_float32_model"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/float32"
+			android:checked="true"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_float16_model"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/float16"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_quant_model"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/quant"
+			style="@style/RadioBtn" />
+	</RadioGroup>
+
+	<GridLayout
+		android:id="@+id/grid_threads"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintLeft_toRightOf="@id/radio_group_model_type"
+		app:layout_constraintTop_toTopOf="parent"
+		android:orientation="horizontal"
+		android:columnCount="2"
+		android:rowCount="2"
+		android:background="#70808080">
+		<RadioButton
+			android:id="@+id/radio_thread_1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/_1"
+			android:checked="true"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_thread_2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/_2"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_thread_3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/_3"
+			style="@style/RadioBtn" />
+		<RadioButton
+			android:id="@+id/radio_thread_4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/_4"
+			style="@style/RadioBtn" />
+	</GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

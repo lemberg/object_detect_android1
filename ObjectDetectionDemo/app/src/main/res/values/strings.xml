@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name">ObjectDetectionDemo</string>
+	<string name="permissions_missing">Permissions missing</string>
+	<string name="ml_binding">ML binding</string>
+	<string name="obj_detection">Obj detection</string>
+	<string name="cpu">CPU</string>
+	<string name="gpu">GPU</string>
+	<string name="nnapi">NNAPI</string>
+	<string name="float32">Float32</string>
+	<string name="float16">Float16</string>
+	<string name="quant">Quant</string>
+	<string name="_1">1</string>
+	<string name="_2">2</string>
+	<string name="_3">3</string>
+	<string name="_4">4</string>
+</resources>

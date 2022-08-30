@@ -1,0 +1,1 @@
+python %OBJ_DETECT%\model_main_tf2.py --model_dir=out_train --pipeline_config_path=ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/pipeline.config
